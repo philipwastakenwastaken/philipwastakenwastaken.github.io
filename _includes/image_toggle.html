@@ -1,0 +1,26 @@
+<div class="toggle-container">
+  <div class="button-div">
+   <input type="radio" id="all" name="graph_switch" value="All" checked="checked" onclick="myFunction('{{ include.url_all }}')"/>
+		<label for="all">All</label>
+    <input type="radio" id="gryffindor" name="graph_switch" value="Gryffindor" onclick="myFunction('{{ include.url_gryff }}')"/>
+		<label for="gryffindor">Gryffindor</label>
+    <input type="radio" id="slytherin" name="graph_switch" value="Slytherin" onclick="myFunction('{{ include.url_slyth }}')"/>
+		<label for="slytherin">Slytherin</label>
+    <input type="radio" id="ravenclaw" name="graph_switch" value="Ravenclaw" onclick="myFunction('{{ include.url_raven }}')"/>
+		<label for="ravenclaw">Ravenclaw</label>
+    <input type="radio" id="hufflepuff" name="graph_switch" value="Hufflepuff" onclick="myFunction('{{ include.url_huff }}')"/>
+		<label for="hufflepuff">Hufflepuff</label>
+    <input type="radio" id="unknown_house" name="graph_switch" value="Unknown House" onclick="myFunction('{{ include.url_unknown }}')"/>
+		<label for="unknown_house">Unknown House</label>
+  </div>
+  
+<script>
+function myFunction(location) {
+  console.log("changing to file at" + location);
+  var image = document.getElementById('graph_img')
+  image.src = location;
+}
+</script>
+
+  <img id="graph_img" src="{{ include.url_all }}" alt="img: {{ include.description }}" width="{{ include.width }}" height="{{ include.height }}" class="graph_img">
+</div>

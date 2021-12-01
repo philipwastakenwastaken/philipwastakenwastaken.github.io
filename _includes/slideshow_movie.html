@@ -1,0 +1,93 @@
+ <!-- Slideshow container -->
+<div class="ss-container">
+ <div class="slideshow-container">
+
+   <!-- Full-width images with number and caption text -->
+   <div class="mySlidesMovie">
+     <div class="numbertext">1 / 8</div>
+     <img src="{{ include.movie1 }}" style="width:100%">
+   </div>
+
+   <div class="mySlidesMovie">
+     <div class="numbertext">2 / 8</div>
+     <img src="{{ include.movie2 }}" style="width:100%">
+   </div>
+
+   <div class="mySlidesMovie">
+     <div class="numbertext">3 / 8</div>
+     <img src="{{ include.movie3 }}" style="width:100%">
+   </div>
+   <div class="mySlidesMovie">
+     <div class="numbertext">4 / 8</div>
+     <img src="{{ include.movie4 }}" style="width:100%">
+   </div>
+
+   <div class="mySlidesMovie">
+     <div class="numbertext">5 / 8</div>
+     <img src="{{ include.movie5 }}" style="width:100%">
+   </div>
+
+   <div class="mySlidesMovie">
+     <div class="numbertext">6 / 8</div>
+     <img src="{{ include.movie6 }}" style="width:100%">
+   </div>
+
+   <div class="mySlidesMovie">
+     <div class="numbertext">7 / 8</div>
+     <img src="{{ include.movie7 }}" style="width:100%">
+   </div>
+   
+   <div class="mySlidesMovie">
+     <div class="numbertext">8 / 8</div>
+     <img src="{{ include.movie8 }}" style="width:100%">
+   </div>
+
+   <!-- Next and previous buttons -->
+   <a class="prev" onclick="plusSlidesMovie(-1)">&#10094;</a>
+   <a class="next" onclick="plusSlidesMovie(1)">&#10095;</a>
+ </div>
+ <br>
+
+ <!-- The dots/circles -->
+ <div style="text-align:center">
+   <span class="dotMovie" onclick="currentSlideMovie(1)"></span>
+   <span class="dotMovie" onclick="currentSlideMovie(2)"></span>
+   <span class="dotMovie" onclick="currentSlideMovie(3)"></span>
+   <span class="dotMovie" onclick="currentSlideMovie(4)"></span>
+   <span class="dotMovie" onclick="currentSlideMovie(5)"></span>
+   <span class="dotMovie" onclick="currentSlideMovie(6)"></span>
+   <span class="dotMovie" onclick="currentSlideMovie(7)"></span>
+   <span class="dotMovie" onclick="currentSlideMovie(8)"></span>
+ </div> 
+</div>
+
+<script>
+var slideIndexMovie = 1;
+showSlidesMovie(slideIndexMovie);
+
+// Next/previous controls
+function plusSlidesMovie(n) {
+  showSlidesMovie(slideIndexMovie += n);
+}
+
+// Thumbnail image controls
+function currentSlideMovie(n) {
+  showSlidesMovie(slideIndexMovie = n);
+}
+
+function showSlidesMovie(n) {
+  var i;
+  var slidesMovie = document.getElementsByClassName("mySlidesMovie");
+  var dotsMovie = document.getElementsByClassName("dotMovie");
+  if (n > slidesMovie.length) {slideIndexMovie = 1}
+  if (n < 1) {slideIndexMovie = slidesMovie.length}
+  for (i = 0; i < slidesMovie.length; i++) {
+      slidesMovie[i].style.display = "none";
+  }
+  for (i = 0; i < dotsMovie.length; i++) {
+      dotsMovie[i].className = dotsMovie[i].className.replace(" active", "");
+  }
+  slidesMovie[slideIndexMovie-1].style.display = "block";
+  dotsMovie[slideIndexMovie-1].className += " active";
+}
+</script>
