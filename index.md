@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 02806 Project
+title: 02805 Project
 ---
 
 # Introduction
@@ -61,32 +61,32 @@ top: 0.0%;
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-*"I think there is a world market for maybe five computers"* are the now famous (and often ridiculed) words proclaimed by then IBM president, Thomas Watson, in 1943. Ever since the advent of the first computer, the world has been undergoing a *digital revolution*. 
-Digitalization has made it easy for consumers to **(i)** share their opinions and **(ii)** rely on the opinion of others. This can be seen directly in the popularity of both review aggregators (e.g., *Metacritic*, *Rotten Tomatoes*) and review crowdsourcing (e.g., *Yelp*, *Trustpilot*, *Google Reviews*). 
+*"I think there is a world market for maybe five computers"* are the now famous (and often ridiculed) words proclaimed by then IBM president, Thomas Watson, in 1943. Ever since the advent of the first computer, the world has been undergoing a *digital revolution*.
+Digitalization has made it easy for consumers to **(i)** share their opinions and **(ii)** rely on the opinion of others. This can be seen directly in the popularity of both review aggregators (e.g., *Metacritic*, *Rotten Tomatoes*) and review crowdsourcing (e.g., *Yelp*, *Trustpilot*, *Google Reviews*).
 
 Over the years, *Yelp* has accumulated a bad reputation. Business owners feel forced to cater excessively to *Yelp* reviewers, as even a single negative review can be consequential. In fact, a survey showed that $$78\%$$ of business owners were concerned about negative *Yelp* reviews (Loten 2014), with articles like "*Yelp Is Awful for Everyone Involved*" and "*It's Time to Kill Yelp. It's not worth the harm it causes*" adding to the injury.
 On the other hand, the significance of Yelp cannot be ignored. Luca 2016 found that an increase of one star on *Yelp* causes revenue to increase by $$5$$-$$9\%$$. Additionally, Anderson and Magruder 2013 estimated that an extra half-star on a
 restaurant's rating causes the business to be fully booked $$19\%$$ more often.
 
-Even though *Yelp* has a negative standing with businesses, some positives can be shown through the *Yelp Open Dataset* (Yelp 2021). The dataset contains millions of user reviews and business characteristics across 8 metropolitan areas throughout the period 2005-2021, however, in this project the focus lies on the city of Austin, Texas. In addition, interesting elements related to reviews are examined that might be able to help potential business owners. 
+Even though *Yelp* has a negative standing with businesses, some positives can be shown through the *Yelp Open Dataset* (Yelp 2021). The dataset contains millions of user reviews and business characteristics across 8 metropolitan areas throughout the period 2005-2021, however, in this project the focus lies on the city of Austin, Texas. In addition, interesting elements related to reviews are examined that might be able to help potential business owners.
 
 # Yearly Development
 
-We start off by exploring the bare essentials of *Yelp*: yearly growth and rating distribution of user reviews. This will allow us the establish important groundwork for the rest of the article. 
+We start off by exploring the bare essentials of *Yelp*: yearly growth and rating distribution of user reviews. This will allow us the establish important groundwork for the rest of the article.
 The yearly growth should show if *Yelp* is even worth examining, and the rating distribution will give an initial impression of *Yelp* culture.
 
 {% include reviews_per_year_bokeh.html %}
 
-Above we see the amount of user reviews published on *Yelp* each year in Austin. **Hover** over a bar column to see the exact amount. Note that *Yelp*, contrary to popular belief, also contains reviews for non-restauration businesses. 
+Above we see the amount of user reviews published on *Yelp* each year in Austin. **Hover** over a bar column to see the exact amount. Note that *Yelp*, contrary to popular belief, also contains reviews for non-restauration businesses.
 First of all, we clearly see that *Yelp* is displaying impressive growth. 2006 contains only 2786 reviews, whereas 2018 contains a whopping 167,037. This matches our expectation that review crowdsourcing has become increasingly important for consumers.
-We may attribute the decrease in reviews from 2019 and onwards to the ongoing COVID-19 pandemic. 
+We may attribute the decrease in reviews from 2019 and onwards to the ongoing COVID-19 pandemic.
 
 {% include yearly_reviews_bokeh.html %}
 
-In a *Yelp* review, the writer, along with an accommodating text, rates their experience at the given business from 1 to 5 stars, with 5 stars being the best. 
+In a *Yelp* review, the writer, along with an accommodating text, rates their experience at the given business from 1 to 5 stars, with 5 stars being the best.
 The figure above is a *stacked bar plot*, which shows how the distribution of user review ratings has changed over time. Each bar column contains five uniquely coloured sub-columns (see legend), where each displays the
-relative number of reviews for a given rating.  **Hover** over a column to see the exact star distribution. 
-Given that *Yelp* is notorious for negative reviews, the large amount of positive (especially 5 star) reviews across the board is surprising. Perhaps even more surprising, this trend seems to be increasing each year, peaking 
+relative number of reviews for a given rating.  **Hover** over a column to see the exact star distribution.
+Given that *Yelp* is notorious for negative reviews, the large amount of positive (especially 5 star) reviews across the board is surprising. Perhaps even more surprising, this trend seems to be increasing each year, peaking
 at $$59.73\%$$ of all reviews being 5 star in 2021. However, we can also see that the proportion of 1 star reviews is increasing, albeit not at the same pace as the 5 star reviews. This indicates that while *Yelp* is becoming more positive, it is also becoming more polarizing. This could indicate that businesses need to take special care, as even small mistakes may shift an otherwise good review to a bad one.
 
 As the years affected by the coronavirus cannot be considered representative, we do not wish to include this time period in further analyses. This means that we from this point on restrict our coverage to the time period 2005-2018.
@@ -102,29 +102,29 @@ The above map shows the most central neighbourhoods in Austin, and the amount of
 # A Closer Look Into Reviews
 With all the foundations laid out, we are ready to look deeper into the core part of the *Yelp* dataset: user reviews.
 
-## Neighbourhoods 
+## Neighbourhoods
 As we have already mentioned, Austin is compartmentalized into several neighbourhoods. We will now explore the significance of location as a business owner in Austin.
 
 The map below shows the colour-coded (defined by the chart to the right) review average for a given neighbourhood. **Hover** over a neighbourhood to see name, number of reviews and review average.
 We see *clear* groupings when considering the review average. Central, South, West, Southwest and Northwest are generally considered to be the *desired* parts of Austin (Lin and Ji 2014). These are high income areas
-with low crime rates, and are typically not ethnically diverse. These parts of Austin enjoy a high review average - most neighbourhoods have an average in the $$3.8$$-$$4.3$$ range. 
+with low crime rates, and are typically not ethnically diverse. These parts of Austin enjoy a high review average - most neighbourhoods have an average in the $$3.8$$-$$4.3$$ range.
 
 {% include avg_r_star_p_neigh_plotly.html %}
 
 On the contrary, the Northeast and Southeast neighbourhoods are low income areas with various ethnicities. These neighbourhoods have a reputation of being run-down, gritty and crime-ridden.
 By looking at the plot, we see that these areas are significantly lower rated with several blue and even purple patches. The neighbourhood with the lowest review average is Heritage Hills located in Northeast part of town,
-matching the presented narrative. 
+matching the presented narrative.
 
 So far we've established that Austin is a large city with a clear social divide. But what if we look at the extremes of both ends of the review scale?
 The map below contains two types of markers. The green markers are the 10 best reviewed *restauration* businesses. The red markers are likewise, except that these are the 10 *worst* reviewed.
 
 {% include best_worst_food_places_map.html %}
 
-By **clicking** a marker, you can receive additional information about each business. The button in the top right corner also allows for **toggling** each type of marker. 
+By **clicking** a marker, you can receive additional information about each business. The button in the top right corner also allows for **toggling** each type of marker.
 We see a general tendency for the best restaurants to be located near the downtown area, which only a few businesses sprinkled across the rest of the city.
 If we refer back to the previous plot regarding high and low income areas in Austin, we see similar results. All markers conveniently avoid the Northeast and Southeast domains.
 
-The effects of location on the review average is clear: business in socially developed neighbourhoods receive, on average, better reviews than otherwise. 
+The effects of location on the review average is clear: business in socially developed neighbourhoods receive, on average, better reviews than otherwise.
 Any aspiring businesses owners should optimally establish their business in a high income area, given the importance of *Yelp* rating (Loten 2014; Luca 2016).
 This naturally strains the less financially endowed business owner, as housing prices are also substantially more expensive in these communities. In this case, the negative aspect of *Yelp* rears its ugly head. Business owners in low-income areas must certainly be struggling as is, which less positive *Yelp* reviews does not improve.
 
@@ -148,7 +148,7 @@ It contains:
 * The original `yelp_academic_dataset_business.json` file
 * A modified reviews data `reviews_df.pkl` with the text-column removed.
 
-If you want the completely original data, then look [here](https://www.yelp.com/dataset/download). It requires you to write name, mail and intitials to allow for download. 
+If you want the completely original data, then look [here](https://www.yelp.com/dataset/download). It requires you to write name, mail and intitials to allow for download.
 
 Out of the available datasets, we made use of the following for this project:
 * `yelp_academic_dataset_business.json`
@@ -158,9 +158,9 @@ Out of the available datasets, we made use of the following for this project:
 ## Explainer notebook
 If the reader wants to go more into depth on how this project was made and dive into more visualizations based on the *Yelp* dataset, then the explainer notebook can be viewed using [nbviewer](https://nbviewer.jupyter.org/urls/bit.ly/3y2XXjS) (it may take some time to load).
 
-It can also be viewed and downloaded from [GitHub](https://github.com/philipwastakenwastaken/Social-Data-Explainer-Notebook). 
+It can also be viewed and downloaded from [GitHub](https://github.com/philipwastakenwastaken/Social-Data-Explainer-Notebook).
 
-The explainer notebook is very big in size (**150 MB**!) (it thus may take some time to load), and the code itself is *very* memory intensive (can take up to **13 GB** of RAM). Remember to make the notebook **trusted**, if you view it locally! Viewing directly on GitHub won't show some visualizations, but we have provided viewable links inside the notebook, so just use those if the visualization does not show. 
+The explainer notebook is very big in size (**150 MB**!) (it thus may take some time to load), and the code itself is *very* memory intensive (can take up to **13 GB** of RAM). Remember to make the notebook **trusted**, if you view it locally! Viewing directly on GitHub won't show some visualizations, but we have provided viewable links inside the notebook, so just use those if the visualization does not show.
 
 # References
 
