@@ -175,6 +175,8 @@ The above visualization is impactful. Based on the labels, we can see that we ma
 
 {% include top10sentiment.html %}
 
+{% include bottom10sentiment.html %}
+
 # Temporal sentiment analysis
 # Afterword
 
