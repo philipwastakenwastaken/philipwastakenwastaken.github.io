@@ -173,7 +173,7 @@ The above visualization is impactful. Based on the labels, we can see that we ma
 
 <img src="images/sentiment_per_character.png" class="center">
 
-<table border="0" class="center">
+<table border="0" class="big-center">
   <thead>
     <tr style="text-align: center;">
       <th></th>
