@@ -175,7 +175,7 @@ The above visualization is impactful. Based on the labels, we can see that we ma
 
 {% include top10sentiment.html width="50%" height="50%" %}
 
-{% include bottom10sentiment.html class="center" %}
+{% include bottom10sentiment.html %}
 
 {% include top10sentiment.html width="50" height="50" %}
 
