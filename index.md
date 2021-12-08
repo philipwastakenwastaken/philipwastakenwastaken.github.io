@@ -274,6 +274,8 @@ There are also a few surprises here. *Vaatu* is the "*the spirit of darkness and
 
 We also find *none* of the main cast present in the top 10. This denies our hypothesis previously presented that the outliers could be main characters.
 
+We will now explore the *bottom 10* characters in similar manner.
+
 <table border="0" class="big-center">
   <thead>
     <tr style="text-align: center;">
@@ -301,7 +303,7 @@ We also find *none* of the main cast present in the top 10. This denies our hypo
     </tr>
     <tr>
       <th>Raava</th>
-      <td>NaN</td>
+      <td>N/A</td>
       <td>Female</td>
       <td>241</td>
       <td>-0.054711</td>
@@ -315,7 +317,7 @@ We also find *none* of the main cast present in the top 10. This denies our hypo
     </tr>
     <tr>
       <th>Wan Shi Tong</th>
-      <td>NaN</td>
+      <td>N/A</td>
       <td>Male</td>
       <td>210</td>
       <td>-0.028506</td>
