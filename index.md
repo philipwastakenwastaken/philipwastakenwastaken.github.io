@@ -173,7 +173,7 @@ The above visualization is impactful. Based on the labels, we can see that we ma
 
 <img src="images/sentiment_per_character.png" class="center">
 
-{% include top10sentiment.html %}
+{% include top10sentiment.html class="center" %}
 
 {% include bottom10sentiment.html %}
 
