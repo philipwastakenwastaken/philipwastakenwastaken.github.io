@@ -148,7 +148,7 @@ The leader of the Fire Nation is deemed the *lord*, explaining why it is so prom
 
 The top word is *nomad*, which precisely is the status of the Air Nation's inhabitants. The Air Nation is known to have a relative large degree of benders (when compared to other nations), explaining why *airbender* is high on the list. Regardless, *nonbender* is still prominent. In terms of spiritual terms, we see *chakra*, *spirit*, *sage* and *cycle*.
 
-<img src="images/ur_cloud.png"class="center">
+<img src="images/ur_cloud.png" class="center">
 
 The United Republic is special, since it is an amalgamation of the previous four nations. It was created during *The Legend of Korra*, making it a young nation. We feel that the diversity of the republic is represented in the word cloud. There are *a lot* of different terms that are only vaguely related. Many of the words from the previous word clouds are present. The most prominent word is *nonbender*, indicating that the republic contains a large degree of nonbenders. We can also see some of the nation's issues through *gangster*, *triad*, *equalist*, *robbery*, *hatred*, *killed* and *imprisonment*. Equalists are a radical group against benders, while triads are groups of gangsters. We see a focus on business and industry as well with *business*, *industry*, *wealthy*, *economic*, *future* and *enterprise*.
 
@@ -157,19 +157,16 @@ Before continuing with text analysis, a quick detour is in order.  In this secti
 
 By examining communities, we can see if characters of the same nationality really do flock together. We can also see how characters across both series are related.
 
-<img src="images/community_nat_dist.png"class="center">
+<img src="images/community_nat_dist.png" class="center">
 
-The above shows the distribution of community sizes. We clearly see all 6 communities represented. The communities are of varying sizes, with three communities boasting over 100 members. The two smallest communities have less than 30 members each.
-
-Here we see the same plot as before, but with each community split by its nationality. The results somewhat confirm our hypothesis. Almost all communities have a nationality that is overrepresented. The only expection is community $1$, which is also the only community to contain a large number of United Republic members. This is a clear indicator that community $1$ encapsulates characters from *The Legend of Korra*.
+The above shows the distribution of community sizes, along with their internal representation of nationality. We see that our partition contains **6** communities in total. The communities are of varying sizes, with three communities boasting over 100 members. The two smallest communities have less than 30 members each.
+The plot somewhat confirm our hypothesis. Almost all communities have a nationality that is overrepresented. The only expection is community $1$, which is also the only community to contain a large number of United Republic members. This is a clear indicator that community $1$ encapsulates characters from *The Legend of Korra*.
 
 In order to solidify our findings, we will revisualize our network from earlier. This time however, nodes will be colored according to the community they belong to.
 
-<img src="images/community_network.png"class="big-center">
+<img src="images/community_network.png" class="big-center">
 
-The above visualization is impactful. Based on the labels, we can see that the Louvain method managed to accurately partition characters between the two series. All the nodes in the grey community are directly associated with *The Legend of Korra*, while the rest have a role in both series (albeit mostly the first).
-
-The light blue community managed to capture the first 5 members of the original *Team Avatar* which the first series focuses on. In the red community, we also see members of the royal Fire Nation family.
+The above visualization is impactful. Based on the labels, we can see that we managed to accurately partition characters between the two series. All the nodes in the grey community are directly associated with *The Legend of Korra*, while the rest have a role in both series (albeit mostly the first).  The light blue community managed to capture the first 5 members of the original *Team Avatar* which the first series focuses on. In the red community, we also see members of the royal Fire Nation family.
 
 ## Nationality and speech
 
