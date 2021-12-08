@@ -257,7 +257,7 @@ The above visualization is impactful. Based on the labels, we can see that we ma
   </tbody>
 </table>
 
-{% include bottom10sentiment.html %}
+{% include bottom10sentiment.html width="80%" %}
 
 {% include top10sentiment.html width="50" height="50" %}
 
