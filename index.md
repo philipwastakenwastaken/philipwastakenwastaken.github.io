@@ -31,6 +31,13 @@ flex-shrink: 0;
   margin-right: auto;
   width: 50%;
 }
+
+.big-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 </style>
 
 <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
@@ -78,7 +85,7 @@ Within ATLA, characters have social relations, just like we do in real life. Som
 connections are formed by inspecting a character's respective fandom wiki page. If a character's page mentions another character, those two receive a link and vice versa.
 
 <!--- network vis here --->
-<img src="images/network_vis.png" class="center">
+<img src="images/network_vis.png" class="big-center">
 
 The above image shows the social network of ATLA according to the fandom wiki. There is a lot to take in here, so we'll go through each part one-by-one.  What you may notice first is that some nodes are larger than others. This is due to nodes being sized according to their *degree*, i.e. the number of connections a character has. The largest nodes are also labelled, and we see familiar characters like *Aang*, *Katara*, *Korra* and so on. Nodes are also colored according to the *nationality* of a character. The Fire Nation is red, Air Nation white-ish, Earth Kingdom green, Water Tribe blue, United Republic purple and unknown nationalities are black. What we see is that characters of similar nationalities tend to be *flocked* close together. The same is true for the color of links. If a link connects characters of the same nationality, the link will be that nationality's color. There is a general tendency for characters of the same nationality to be connected, but there are also *many* links for which this does not hold.
 It is also interesting that we can see *Aang* and *Korra* in separate clusters. This provides a distinction between which series a character is associated with.
