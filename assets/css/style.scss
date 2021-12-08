@@ -60,7 +60,10 @@ $section-headings-color:#AE0001;
 }
 
 .main-content table {
-    width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .page-header {
