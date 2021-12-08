@@ -173,7 +173,89 @@ The above visualization is impactful. Based on the labels, we can see that we ma
 
 <img src="images/sentiment_per_character.png" class="center">
 
-{% include top10sentiment.html class="center" %}
+<table border="0" class="center">
+  <thead>
+    <tr style="text-align: center;">
+      <th></th>
+      <th>Nationality</th>
+      <th>Gender</th>
+      <th>Word count</th>
+      <th>Sentiment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Ty Lee</th>
+      <td>Fire Nation</td>
+      <td>Female</td>
+      <td>299</td>
+      <td>0.207650</td>
+    </tr>
+    <tr>
+      <th>Zei</th>
+      <td>Earth Kingdom</td>
+      <td>Male</td>
+      <td>203</td>
+      <td>0.176929</td>
+    </tr>
+    <tr>
+      <th>Pakku</th>
+      <td>Water Tribe</td>
+      <td>Male</td>
+      <td>226</td>
+      <td>0.167621</td>
+    </tr>
+    <tr>
+      <th>Yin</th>
+      <td>Earth Kingdom</td>
+      <td>Female</td>
+      <td>153</td>
+      <td>0.161825</td>
+    </tr>
+    <tr>
+      <th>Sozin</th>
+      <td>Fire Nation</td>
+      <td>Male</td>
+      <td>212</td>
+      <td>0.157504</td>
+    </tr>
+    <tr>
+      <th>Gun</th>
+      <td>Earth Kingdom</td>
+      <td>Male</td>
+      <td>169</td>
+      <td>0.147874</td>
+    </tr>
+    <tr>
+      <th>Hiroshi</th>
+      <td>Earth Kingdom</td>
+      <td>Male</td>
+      <td>115</td>
+      <td>0.146563</td>
+    </tr>
+    <tr>
+      <th>Teo</th>
+      <td>Earth Kingdom</td>
+      <td>Male</td>
+      <td>174</td>
+      <td>0.135319</td>
+    </tr>
+    <tr>
+      <th>Vaatu</th>
+      <td>NaN</td>
+      <td>Male</td>
+      <td>160</td>
+      <td>0.127987</td>
+    </tr>
+    <tr>
+      <th>Jet</th>
+      <td>Earth Kingdom</td>
+      <td>Male</td>
+      <td>203</td>
+      <td>0.117753</td>
+    </tr>
+  </tbody>
+</table>
 
 {% include bottom10sentiment.html %}
 
