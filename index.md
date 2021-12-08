@@ -67,7 +67,7 @@ The first series follows *Aang*, a young boy struggling with the burden of being
 
 The series has only grown in popularity since its inception, and we therefore consider this a prime time to take a *deep dive* into the *Avatar: The Last Airbender* universe. We will explore the connections between characters, and characterize their behaviour (both invidually and in groups) by analyzing their spoken word. Differences of mood within and across series will also be analyzed. All this is made possible by the use of the [Avatar fandom wiki](avatar.fandom.com/wiki/Avatar_Wiki), containing all information needed to make our analysis.
 
-# The social network visualized
+# The social network, visualized
 Within ATLA, characters have social relations, just like we do in real life. Some characters pave their way and become famous, while others live a humble life and stick to their own. In this section, we want to *visualize* the social network of ATLA. Each *node* of the network represents a character, and each *link* (the lines between nodes) represents a connection between two characters. For our analysis,
 connections are formed by inspecting a character's respective fandom wiki page. If a character's page mentions another character, those two receive a link and vice versa.
 
@@ -82,12 +82,30 @@ The above visualization gives an overview, but we take additional steps to get t
 <!--- degree distribution here --->
 <img src="images/degree_dist.png">
 
-The above shows the degree distribution, represented by a histogram to the left and a log-log scatter plot to the right. It is clear that all characters in ATLA is not created equal. Links are distributed extremely disproportionately between characters, seen clearly on the histogram. Most characters
+The above shows the degree distribution, represented by a histogram to the left and a log-log scatter plot to the right. It is clear that characters in ATLA are not created equal. Links are distributed extremely disproportionately between characters, seen clearly on the histogram. Most characters have a very low number of links, and inversely, very few characters have a very high number of links. We can see this represented on the log-log plot, where the distribution follows a straight line. What we see here is similar to what happens in real social networks. A few key chararcters serve as *hubs* (in this case *Aang*, *Korra* etc.) encompassing a large number of links. Lesser known characters then share connections through these hubs. Networks that possess this property are typically called *scale free networks*.
+
+## What does a character in ATLA look like?
+The ATLA universe contains characters of many shapes and sizes. Here, we'll explore the basic characteristics of an entity within the universe.
+
+<img src="images/nat_dist.png">
+
+Above, we see the distrubution of nationality within avatar. We see that the Earth Kingdom is by far the most represented nation, but the Fire Nation following behind in second. It makes sense that the Water Tribe and Air Nation are small, since they are much closer to tribes found in the real world. We cannot actually say that the Earth Kingdom has a larger population than the Fire Nation from the above. What we can say however, is that the main characters of both series interact with characters from the Earth Kingdom to a greater degree. The United Republic, first formed in the second series, receives less attention than either of the major nations.
+
+<img src="images/bending_dist.png">
+
+As we can see above, the *vast* majority of characters are non-benders. This gives us an interesting aspect of the series. Mastering a bending art is rare, and most common folk will never master it. It is also expected that this plot is similar to the distribution of nationalities. Characters from the Earth Kingdom are typically earthbenders and so on.
+
+<img src="images/gender_dist.png">
+
+The gender distribution is a bit surprising. It appears that male characters far outweigh the female characters by a factor of more than 2. Determining why this is the case is difficult. In the end, it comes up to how the writers determined to frame the show. The show mainly deals with war and conflict, that is traditionally handled by men.
 
 
+## The spoken word of *Avatar: The Last Airbender*
 
+<!--- summarize the structure of avatar, episode counts, seasons etc.... --->
+<!--- explain about the character dialogue.... --->
 
-
+<!--- show word distribution here --->
 # Community detection
 In order to easier visualize the dataset, we narrow our focus to Austin, Texas. Austin is a city located in the United States within the state of Texas, serving as the state capital city. With a population of 978,908, it is the 11th largest city in the US
 by population count. The city is therefore populous enough to be representative of the *Yelp* dataset. Austin also encompasses more than 100 neighbourhoods, making it ideal for map-style visualizations.
@@ -96,12 +114,6 @@ by population count. The city is therefore populous enough to be representative 
 
 The above map shows the most central neighbourhoods in Austin, and the amount of businesses each neighbourhood has with at least one *Yelp* review. Neighbourhoods are colour-coded, where purple contains the least amount of businesses, and yellow contains the most. **Hover** over each neighbourhood to see the exact amount of businesses it contains. Most neighbourhoods are in the same range, with the only clear outlier being downtown Austin with 2026 businesses.
 
-# The spoken word of *Avatar: The Last Airbender*
-
-<!--- summarize the structure of avatar, episode counts, seasons etc.... --->
-<!--- explain about the character dialogue.... --->
-
-<!--- show word distribution here --->
 
 ## Nationality and speech
 
