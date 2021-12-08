@@ -160,7 +160,7 @@ By examining communities, we can see if characters of the same nationality reall
 <img src="images/community_nat_dist.png" class="center">
 
 The above shows the distribution of community sizes, along with their internal representation of nationality. We see that our partition contains **6** communities in total. The communities are of varying sizes, with three communities boasting over 100 members. The two smallest communities have less than 30 members each.
-The plot somewhat confirm our hypothesis. Almost all communities have a nationality that is overrepresented. The only expection is community $1$, which is also the only community to contain a large number of United Republic members. This is a clear indicator that community $1$ encapsulates characters from *The Legend of Korra*.
+The plot somewhat confirm our hypothesis. Almost all communities have a nationality that is overrepresented. The only expection is community **1**, which is also the only community to contain a large number of United Republic members. This is a clear indicator that community **1** encapsulates characters from *The Legend of Korra*.
 
 In order to solidify our findings, we will revisualize our network from earlier. This time however, nodes will be colored according to the community they belong to.
 
