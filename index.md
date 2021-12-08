@@ -36,7 +36,7 @@ flex-shrink: 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 80%;
 }
 </style>
 
@@ -93,7 +93,7 @@ It is also interesting that we can see *Aang* and *Korra* in separate clusters. 
 The above visualization gives an overview, but we take additional steps to get the specifics. We wish to examine the number of links each character possesses, called the *degree distribution*.
 
 <!--- degree distribution here --->
-<img src="images/degree_dist.png" class="center">
+<img src="images/degree_dist.png" class="big-center">
 
 The above shows the degree distribution, represented by a histogram to the left and a log-log scatter plot to the right. It is clear that characters in ATLA are not created equal. Links are distributed extremely disproportionately between characters, seen clearly on the histogram. Most characters have a very low number of links, and inversely, very few characters have a very high number of links. We can see this represented on the log-log plot, where the distribution follows a straight line. What we see here is similar to what happens in real social networks. A few key chararcters serve as *hubs* (in this case *Aang*, *Korra* etc.) encompassing a large number of links. Lesser known characters then share connections through these hubs. Networks that possess this property are typically called *scale free networks*.
 
