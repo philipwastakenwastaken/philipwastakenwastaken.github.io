@@ -65,7 +65,7 @@ top: 0.0%;
 *Avatar: The Last Airbender* (ATLA) is a critically acclaimed animation series, by authors *Michael DiMartino* and *Bryan Konietzko*, that first aired in 2005. It split itself over two series, the titular *Avatar: The Last Airbender* and ending with *The Legend of Korra* in 2012.
 The first series follows *Aang*, a young boy struggling with the burden of being denoted the *Avatar*, while the notorious *Hundred-year War* rages on by the aggressors, the *Fire Nation*. The final series, *The Legend of Korra*, is set 70 years after the finale of the first series. Nothing but a child, *Korra* is likewise denoted the *Avatar*, and troubles follow.
 
-The series has only grown in popularity since its inception, and we therefore consider this a prime time to take a *deep dive* into the *Avatar: The Last Airbender* universe. We will explore the connections between characters, and characterize their behaviour (both invidually and in groups) by analyzying their spoken word. All this is made possible by the use of the [Avatar fandom wiki](avatar.fandom.com/wiki/Avatar_Wiki), containing all information needed to make our analysis.
+The series has only grown in popularity since its inception, and we therefore consider this a prime time to take a *deep dive* into the *Avatar: The Last Airbender* universe. We will explore the connections between characters, and characterize their behaviour (both invidually and in groups) by analyzing their spoken word. Differences of mood within and across series will also be analyzed. All this is made possible by the use of the [Avatar fandom wiki](avatar.fandom.com/wiki/Avatar_Wiki), containing all information needed to make our analysis.
 
 # The social network visualized
 Within ATLA, characters have social relations, just like we do in real life. Some characters pave their way and become famous, while others live a humble life and stick to their own. In this section, we want to *visualize* the social network of ATLA. Each *node* of the network represents a character, and each *link* (the lines between nodes) represents a connection between two characters. For our analysis,
@@ -74,18 +74,18 @@ connections are formed by inspecting a character's respective fandom wiki page. 
 <!--- network vis here --->
 <img src="images/network_vis.png">
 
-The above image shows the social network of ATLA according to the fandom wiki. There is a lot to take in here, so we'll go through each part one-by-one.  What you may notice first is that some nodes are larger than others. This is due to nodes being sizes according to their *degree*, i.e. the number of connections a character has. The largest nodes are also labelled, and we see familiar characters like *Aang*, *Katara*, *Korra* and so on. Nodes are also colored according to the *nationality* of a character. The Fire Nation is red, Air Nation white-ish, Earth Kingdom green, Water Tribe blue, United Republic purple and unknown nationalities are black. What we see is that characters of similar nationalities tend to be *flocked* close together. The same is true for the color of links. If a link connects characters of the same nationality, the link will be that nationality's color. It is also interesting that we can see *Aang* and *Korra* in separate clusters. This provides a distinction between which series a character is associated with.
+The above image shows the social network of ATLA according to the fandom wiki. There is a lot to take in here, so we'll go through each part one-by-one.  What you may notice first is that some nodes are larger than others. This is due to nodes being sizes according to their *degree*, i.e. the number of connections a character has. The largest nodes are also labelled, and we see familiar characters like *Aang*, *Katara*, *Korra* and so on. Nodes are also colored according to the *nationality* of a character. The Fire Nation is red, Air Nation white-ish, Earth Kingdom green, Water Tribe blue, United Republic purple and unknown nationalities are black. What we see is that characters of similar nationalities tend to be *flocked* close together. The same is true for the color of links. If a link connects characters of the same nationality, the link will be that nationality's color. There is a general tendency for characters of the same nationality to be connected, but there are also *many* links for which this does not hold.
+It is also interesting that we can see *Aang* and *Korra* in separate clusters. This provides a distinction between which series a character is associated with.
+
+The above visualization gives an overview, but we take additional steps to get the specifics. We wish to examine the number of links each character possesses, called the *degree distribution*.
 
 <!--- degree distribution here --->
-{% include yearly_reviews_bokeh.html %}
+<img src="images/degree_dist.png">
 
-In a *Yelp* review, the writer, along with an accommodating text, rates their experience at the given business from 1 to 5 stars, with 5 stars being the best.
-The figure above is a *stacked bar plot*, which shows how the distribution of user review ratings has changed over time. Each bar column contains five uniquely coloured sub-columns (see legend), where each displays the
-relative number of reviews for a given rating.  **Hover** over a column to see the exact star distribution.
-Given that *Yelp* is notorious for negative reviews, the large amount of positive (especially 5 star) reviews across the board is surprising. Perhaps even more surprising, this trend seems to be increasing each year, peaking
-at $$59.73\%$$ of all reviews being 5 star in 2021. However, we can also see that the proportion of 1 star reviews is increasing, albeit not at the same pace as the 5 star reviews. This indicates that while *Yelp* is becoming more positive, it is also becoming more polarizing. This could indicate that businesses need to take special care, as even small mistakes may shift an otherwise good review to a bad one.
+The above shows the degree distribution, represented by a histogram to the left and a log-log scatter plot to the right. It is clear that all characters in ATLA is not created equal. Links are distributed extremely disproportionately between characters, seen clearly on the histogram. Most characters
 
-As the years affected by the coronavirus cannot be considered representative, we do not wish to include this time period in further analyses. This means that we from this point on restrict our coverage to the time period 2005-2018.
+
+
 
 
 # Community detection
