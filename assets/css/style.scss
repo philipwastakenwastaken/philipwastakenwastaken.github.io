@@ -1,6 +1,6 @@
 ---
 ---
-// OVERWRITES // 
+// OVERWRITES //
 
 // Headers
 $header-bg-color: #AE0001;
@@ -15,7 +15,7 @@ $section-headings-color:#AE0001;
 @import "{{ site.theme }}";
 
 .page-header {
-  background-image: url(../../images/food.jpg);
+  background-image: url(../../images/team_avatar.jpg);
   background-position: center;
   background-blend-mode: darken;
 }
@@ -25,7 +25,7 @@ $section-headings-color:#AE0001;
 }
 
 
-// CUSTOM CSS // 
+// CUSTOM CSS //
  /* The navigation bar */
 .Fixed {
   overflow: hidden;
@@ -56,8 +56,8 @@ $section-headings-color:#AE0001;
 
 /* Main content */
 .main-content {
-	margin-top: 50px; 
-} 
+	margin-top: 50px;
+}
 
 .page-header {
   margin-top: 50px;
@@ -68,7 +68,7 @@ h1 {
 }
 
 h2 {
-	scroll-margin-top: 60px;	
+	scroll-margin-top: 60px;
 }
 
 .toggle-container {
@@ -90,7 +90,7 @@ h2 {
     cursor: pointer;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 10px; 
+    padding-left: 10px;
     padding-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
