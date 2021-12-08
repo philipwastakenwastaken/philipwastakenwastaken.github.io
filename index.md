@@ -364,8 +364,61 @@ We will now explore the *bottom 10* characters in similar manner.
 
 The rest of the list is not surprising. These are all characters that either have negative personalities, or have suffered deep personal losses. Nonetheless, most of these characters are from the first series, denoting a difference between the two.
 
+## Community sentiment
+This subsection is a throwback to the previously found communities, where we found **6** in total. It would be interesting to consider the sentiments of these communities. We are especially interested in comparing the Fire Nation community, the *Legend of Korra* community and the community including *Aang*, *Sokka* and *Katara*.
+
+
+<table border="0" class="big-center">
+  <thead>
+    <tr style="text-align: center;">
+      <th></th>
+      <th>Sentiment</th>
+    </tr>
+    <tr>
+      <th>Community name</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Riley-Hiroshi-Visola</th>
+      <td>0.146563</td>
+    </tr>
+    <tr>
+      <th>Kyoshi-Rangi-Jianzhu</th>
+      <td>0.144424</td>
+    </tr>
+    <tr>
+      <th>Zuko-Iroh-Azula</th>
+      <td>0.064026</td>
+    </tr>
+    <tr>
+      <th>Aang-Katara-Sokka</th>
+      <td>0.058031</td>
+    </tr>
+    <tr>
+      <th>Korra-Bolin-Mako</th>
+      <td>0.055812</td>
+    </tr>
+    <tr>
+      <th>Hakoda-Malina-Gilak</th>
+      <td>0.035601</td>
+    </tr>
+  </tbody>
+</table>
+
+Above, we see a table consisting of the community sentiment values. Communities are named according to the 3 members with the most links.
+
+The top community consists of non-canon characters, so we will not consider it.
+The Fire Nation community *Zuko-Iroh-Azula* surprises by being relatively positive. Throughout this article, we confirm that the Fire Nation is not as negative as previously though, even beating out the *Aang-Katara-Sokka* community.
+
+We also find the *Korra-Bolin-Mako* community, mainly associated with the second series, to be below most communities. This is consistent with our previous findings, indicating that *The Legend of Korra* could encompass a more negative mood.
 
 # Temporal sentiment analysis
+
+
+
+
 # Afterword
 
 what a ride its been....
