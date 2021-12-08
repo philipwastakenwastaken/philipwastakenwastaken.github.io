@@ -61,26 +61,20 @@ top: 0.0%;
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-*"I think there is a world market for maybe five computers"* are the now famous (and often ridiculed) words proclaimed by then IBM president, Thomas Watson, in 1943. Ever since the advent of the first computer, the world has been undergoing a *digital revolution*.
-Digitalization has made it easy for consumers to **(i)** share their opinions and **(ii)** rely on the opinion of others. This can be seen directly in the popularity of both review aggregators (e.g., *Metacritic*, *Rotten Tomatoes*) and review crowdsourcing (e.g., *Yelp*, *Trustpilot*, *Google Reviews*).
 
-Over the years, *Yelp* has accumulated a bad reputation. Business owners feel forced to cater excessively to *Yelp* reviewers, as even a single negative review can be consequential. In fact, a survey showed that $$78\%$$ of business owners were concerned about negative *Yelp* reviews (Loten 2014), with articles like "*Yelp Is Awful for Everyone Involved*" and "*It's Time to Kill Yelp. It's not worth the harm it causes*" adding to the injury.
-On the other hand, the significance of Yelp cannot be ignored. Luca 2016 found that an increase of one star on *Yelp* causes revenue to increase by $$5$$-$$9\%$$. Additionally, Anderson and Magruder 2013 estimated that an extra half-star on a
-restaurant's rating causes the business to be fully booked $$19\%$$ more often.
+*Avatar: The Last Airbender* (ATLA) is a critically acclaimed animation series, by authors *Michael DiMartino* and *Bryan Konietzko*, that first aired in 2005. It split itself over two series, the titular *Avatar: The Last Airbender* and ending with *The Legend of Korra* in 2012.
+The first series follows *Aang*, a young boy struggling with the burden of being denoted the *Avatar*, while the notorious *Hundred-year War* rages on by the aggressors, the *Fire Nation*. The final series, *The Legend of Korra*, is set 70 years after the finale of the first series. Nothing but a child, *Korra* is likewise denoted the *Avatar*, and troubles follow.
 
-Even though *Yelp* has a negative standing with businesses, some positives can be shown through the *Yelp Open Dataset* (Yelp 2021). The dataset contains millions of user reviews and business characteristics across 8 metropolitan areas throughout the period 2005-2021, however, in this project the focus lies on the city of Austin, Texas. In addition, interesting elements related to reviews are examined that might be able to help potential business owners.
+The series has only grown in popularity since its inception, and we therefore consider this a prime time to take a *deep dive* into the *Avatar: The Last Airbender* universe. We will explore the connections between characters, and characterize their behaviour (both invidually and in groups) by analyzying their spoken word. All this is made possible by the use of the [Avatar fandom wiki](avatar.fandom.com/wiki/Avatar_Wiki), containing all information needed to make our analysis.
 
 # The social network visualized
-
-We start off by exploring the bare essentials of *Yelp*: yearly growth and rating distribution of user reviews. This will allow us the establish important groundwork for the rest of the article.
-The yearly growth should show if *Yelp* is even worth examining, and the rating distribution will give an initial impression of *Yelp* culture.
+Within ATLA, characters have social relations, just like we do in real life. Some characters pave their way and become famous, while others live a humble life and stick to their own. In this section, we want to *visualize* the social network of ATLA. Each *node* of the network represents a character, and each *link* (the lines between nodes) represents a connection between two characters. For our analysis,
+connections are formed by inspecting a character's respective fandom wiki page. If a character's page mentions another character, those two receive a link and vice versa.
 
 <!--- network vis here --->
 <img src="images/network_vis.png">
 
-Above we see the amount of user reviews published on *Yelp* each year in Austin. **Hover** over a bar column to see the exact amount. Note that *Yelp*, contrary to popular belief, also contains reviews for non-restauration businesses.
-First of all, we clearly see that *Yelp* is displaying impressive growth. 2006 contains only 2786 reviews, whereas 2018 contains a whopping 167,037. This matches our expectation that review crowdsourcing has become increasingly important for consumers.
-We may attribute the decrease in reviews from 2019 and onwards to the ongoing COVID-19 pandemic.
+The above image shows the social network of ATLA according to the fandom wiki. There is a lot to take in here, so we'll go through each part one-by-one.  What you may notice first is that some nodes are larger than others. This is due to nodes being sizes according to their *degree*, i.e. the number of connections a character has. The largest nodes are also labelled, and we see familiar characters like *Aang*, *Katara*, *Korra* and so on. Nodes are also colored according to the *nationality* of a character. The Fire Nation is red, Air Nation white-ish, Earth Kingdom green, Water Tribe blue, United Republic purple and unknown nationalities are black. What we see is that characters of similar nationalities tend to be *flocked* close together. The same is true for the color of links. If a link connects characters of the same nationality, the link will be that nationality's color. It is also interesting that we can see *Aang* and *Korra* in separate clusters. This provides a distinction between which series a character is associated with.
 
 <!--- degree distribution here --->
 {% include yearly_reviews_bokeh.html %}
