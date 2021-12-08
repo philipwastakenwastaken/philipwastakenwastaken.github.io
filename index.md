@@ -70,17 +70,19 @@ restaurant's rating causes the business to be fully booked $$19\%$$ more often.
 
 Even though *Yelp* has a negative standing with businesses, some positives can be shown through the *Yelp Open Dataset* (Yelp 2021). The dataset contains millions of user reviews and business characteristics across 8 metropolitan areas throughout the period 2005-2021, however, in this project the focus lies on the city of Austin, Texas. In addition, interesting elements related to reviews are examined that might be able to help potential business owners.
 
-# Yearly Development
+# The social network visualized
 
 We start off by exploring the bare essentials of *Yelp*: yearly growth and rating distribution of user reviews. This will allow us the establish important groundwork for the rest of the article.
 The yearly growth should show if *Yelp* is even worth examining, and the rating distribution will give an initial impression of *Yelp* culture.
 
-{% include reviews_per_year_bokeh.html %}
+<!--- network vis here --->
+<img src="images/network_vis.png">
 
 Above we see the amount of user reviews published on *Yelp* each year in Austin. **Hover** over a bar column to see the exact amount. Note that *Yelp*, contrary to popular belief, also contains reviews for non-restauration businesses.
 First of all, we clearly see that *Yelp* is displaying impressive growth. 2006 contains only 2786 reviews, whereas 2018 contains a whopping 167,037. This matches our expectation that review crowdsourcing has become increasingly important for consumers.
 We may attribute the decrease in reviews from 2019 and onwards to the ongoing COVID-19 pandemic.
 
+<!--- degree distribution here --->
 {% include yearly_reviews_bokeh.html %}
 
 In a *Yelp* review, the writer, along with an accommodating text, rates their experience at the given business from 1 to 5 stars, with 5 stars being the best.
@@ -91,7 +93,8 @@ at $$59.73\%$$ of all reviews being 5 star in 2021. However, we can also see tha
 
 As the years affected by the coronavirus cannot be considered representative, we do not wish to include this time period in further analyses. This means that we from this point on restrict our coverage to the time period 2005-2018.
 
-# The City of Austin
+
+# Community detection
 In order to easier visualize the dataset, we narrow our focus to Austin, Texas. Austin is a city located in the United States within the state of Texas, serving as the state capital city. With a population of 978,908, it is the 11th largest city in the US
 by population count. The city is therefore populous enough to be representative of the *Yelp* dataset. Austin also encompasses more than 100 neighbourhoods, making it ideal for map-style visualizations.
 
@@ -99,34 +102,21 @@ by population count. The city is therefore populous enough to be representative 
 
 The above map shows the most central neighbourhoods in Austin, and the amount of businesses each neighbourhood has with at least one *Yelp* review. Neighbourhoods are colour-coded, where purple contains the least amount of businesses, and yellow contains the most. **Hover** over each neighbourhood to see the exact amount of businesses it contains. Most neighbourhoods are in the same range, with the only clear outlier being downtown Austin with 2026 businesses.
 
-# A Closer Look Into Reviews
-With all the foundations laid out, we are ready to look deeper into the core part of the *Yelp* dataset: user reviews.
+# The spoken word of *Avatar: The Last Airbender*
 
-## Neighbourhoods
+<!--- summarize the structure of avatar, episode counts, seasons etc.... --->
+<!--- explain about the character dialogue.... --->
+
+<!--- show word distribution here --->
+
+## Nationality and speech
+
+<!--- show word clouds here --->
 As we have already mentioned, Austin is compartmentalized into several neighbourhoods. We will now explore the significance of location as a business owner in Austin.
 
 The map below shows the colour-coded (defined by the chart to the right) review average for a given neighbourhood. **Hover** over a neighbourhood to see name, number of reviews and review average.
 We see *clear* groupings when considering the review average. Central, South, West, Southwest and Northwest are generally considered to be the *desired* parts of Austin (Lin and Ji 2014). These are high income areas
 with low crime rates, and are typically not ethnically diverse. These parts of Austin enjoy a high review average - most neighbourhoods have an average in the $$3.8$$-$$4.3$$ range.
-
-{% include avg_r_star_p_neigh_plotly.html %}
-
-On the contrary, the Northeast and Southeast neighbourhoods are low income areas with various ethnicities. These neighbourhoods have a reputation of being run-down, gritty and crime-ridden.
-By looking at the plot, we see that these areas are significantly lower rated with several blue and even purple patches. The neighbourhood with the lowest review average is Heritage Hills located in Northeast part of town,
-matching the presented narrative.
-
-So far we've established that Austin is a large city with a clear social divide. But what if we look at the extremes of both ends of the review scale?
-The map below contains two types of markers. The green markers are the 10 best reviewed *restauration* businesses. The red markers are likewise, except that these are the 10 *worst* reviewed.
-
-{% include best_worst_food_places_map.html %}
-
-By **clicking** a marker, you can receive additional information about each business. The button in the top right corner also allows for **toggling** each type of marker.
-We see a general tendency for the best restaurants to be located near the downtown area, which only a few businesses sprinkled across the rest of the city.
-If we refer back to the previous plot regarding high and low income areas in Austin, we see similar results. All markers conveniently avoid the Northeast and Southeast domains.
-
-The effects of location on the review average is clear: business in socially developed neighbourhoods receive, on average, better reviews than otherwise.
-Any aspiring businesses owners should optimally establish their business in a high income area, given the importance of *Yelp* rating (Loten 2014; Luca 2016).
-This naturally strains the less financially endowed business owner, as housing prices are also substantially more expensive in these communities. In this case, the negative aspect of *Yelp* rears its ugly head. Business owners in low-income areas must certainly be struggling as is, which less positive *Yelp* reviews does not improve.
 
 ## Business Attributes of Food-Places
 The *Yelp* dataset contains several *attributes* for each business, denoting which additional facilities and services are provided. For example, this could be whether a business accepts credit card, allows dogs, provides free
@@ -143,24 +133,20 @@ As stated, *Yelp* has a negative reputation. However, by examining the *Yelp* da
 # More Details
 
 ## Download
-To simply download the datasets used in the explainer notebook, follow the following [link](https://drive.google.com/drive/folders/1zSd-cqSwKju9gqfzC3h_UbDWtqiA6WEM?usp=sharing).
-It contains:
-* The original `yelp_academic_dataset_business.json` file
-* A modified reviews data `reviews_df.pkl` with the text-column removed.
+To download the scraped data from the fandom wiki, one can you this [link](https://drive.google.com/drive/folders/1clkgTPeM7uLm30IFX5zSLVsI_2E0MgXT?usp=sharing).
 
-If you want the completely original data, then look [here](https://www.yelp.com/dataset/download). It requires you to write name, mail and intitials to allow for download.
+The google drive folder consists of three files:
+- `episode_info_df.csv`: contains episode names, episode numbers, season numbers etc. for all episodes of both series.
+- `avatar_data.csv`: contains the names of every character used and their nationality.
+- `atla_lok_transcript.csv`: contains attributed dialogue for all characters.
 
-Out of the available datasets, we made use of the following for this project:
-* `yelp_academic_dataset_business.json`
-* `yelp_academic_dataset_review.json`
-
+The datasets are small and relatively easy to work with, so feel free to explore on your own.
 
 ## Explainer notebook
-If the reader wants to go more into depth on how this project was made and dive into more visualizations based on the *Yelp* dataset, then the explainer notebook can be viewed using [nbviewer](https://nbviewer.jupyter.org/urls/bit.ly/3y2XXjS) (it may take some time to load).
+The more technically inclined readers can take a look at our *explainer notebook*. This notebook contains all the nitty-gritty details required for making this website, right from data scraping to full-on sentiment analysis. The notebook can be viewed in your browser using [nbviewer](https://nbviewer.org/github/philipwastakenwastaken/social-graphs-project-2021/blob/main/explainer.ipynb).
 
-It can also be viewed and downloaded from [GitHub](https://github.com/philipwastakenwastaken/Social-Data-Explainer-Notebook).
-
-The explainer notebook is very big in size (**150 MB**!) (it thus may take some time to load), and the code itself is *very* memory intensive (can take up to **13 GB** of RAM). Remember to make the notebook **trusted**, if you view it locally! Viewing directly on GitHub won't show some visualizations, but we have provided viewable links inside the notebook, so just use those if the visualization does not show.
+You can also view and download it from [Github](https://github.com/philipwastakenwastaken/social-graphs-project-2021). Note that running
+the notebook yourself will take **several hours**, so only do so if you have patience.
 
 # References
 
