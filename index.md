@@ -126,14 +126,33 @@ Naturally, characters within the show do speak, and therefore have dialogue. Dia
 <img src="images/words_per_book.png" class="center">
 
 The above plot shows the number of *spoken words* in each book.
+We find that the results are consistent with the episode counts found previously. It makes sense that a higher episode count results in a higher amount of dialogue *per* book. However, since *Legend of Korra* contains an additional season, we can deduce that it has a higher word count than the first series.
+
+# Depicting nationality through word clouds
+
+We'll dive head first into text analysis by utilizing *word clouds*. Word clouds are blobs of words of differing sizes. The size of a word symbolizes the importance of that word. We wish to use this tool to show the most important words related to each nationality of ATLA.
+
+<img src="images/wt_cloud.png" class="center">
+
+The Water Tribe is a hunter-gatherer society, based on the inuit tribes of the northern hemisphere. The fact that they are hunters also means that they are capable of fighting. We see this clearly in the word cloud, with a lot of words related to combat: *warrior*, *tribe*, *guard*, *fighter* and so on. There are also references to the bending arts. It is notably that the signature bending style of the Water Tribe, waterbending, is not particularly emphasized. Earthbending appears to claim the spot of most emphasized bending art. The top four words are *tribe*, *avatar*, *nation* and *master*. Unfortunately, these words do not give much insight into the Water Tribe, as they are relatively generic.
+
+<img src="images/ek_cloud.png" class="center">
+
+The Earth Kingdom, a monarchy, is the largest nation in terms of land mass. It is also economically prosperous, based on extensive agriculture and industry. The Earth Kingdom was extensively targeted in the so-called *Hundred Year War* started by the Fire Nation due to their power. The monarchy is represented in the word cloud by the words *king*, *guard* and *wall*. There are also words directly related to the war, such as *force*, *threat* and *tension*. Generally, it is difficult to extract concrete characteristics from this word cloud. It could be beacuse the Earth Kingdom is so vast with a diverse cast of characters.
+
+<img src="images/fn_cloud.png" class="center">
+
+The leader of the Fire Nation is deemed the *lord*, explaining why it is so prominent on the word cloud. The word *sister* is most certainly emphasized due to the character *Azula*, the egotistical sister of *Zuko*, another main character of the series. She plays a key role throughout the series, often sabotaging the main characters in various ways. We find it surprising that the Fire Nation word cloud does not contain aggressive and combatant terms to a large degree. We do see words like *force*, *tension* and *firebender*, but these are not overly harsh words. This tells us that perhaps attributing the Fire Nation as warmongers is unfair. We should also recall that our corpus consists of *all* Fire Nation characters. The nation's leaders can still be invasive and imperialistic, while the common folk can be peaceful and kind.
+
+<img src="images/an_cloud.png" class="center">
+
+The top word is *nomad*, which precisely is the status of the Air Nation's inhabitants. The Air Nation is known to have a relative large degree of benders (when compared to other nations), explaining why *airbender* is high on the list. Regardless, *nonbender* is still prominent. In terms of spiritual terms, we see *chakra*, *spirit*, *sage* and *cycle*.
+
+<img src="images/ur_cloud.png" class="center">
+
+The United Republic is special, since it is an amalgamation of the previous four nations. It was created during *The Legend of Korra*, making it a young nation. We feel that the diversity of the republic is represented in the word cloud. There are *a lot* of different terms that are only vaguely related. Many of the words from the previous word clouds are present. The most prominent word is *nonbender*, indicating that the republic contains a large degree of nonbenders. We can also see some of the nation's issues through *gangster*, *triad*, *equalist*, *robbery*, *hatred*, *killed* and *imprisonment*. Equalists are a radical group against benders, while triads are groups of gangsters. We see a focus on business and industry as well with *business*, *industry*, *wealthy*, *economic*, *future* and *enterprise*.
 
 # Community detection
-In order to easier visualize the dataset, we narrow our focus to Austin, Texas. Austin is a city located in the United States within the state of Texas, serving as the state capital city. With a population of 978,908, it is the 11th largest city in the US
-by population count. The city is therefore populous enough to be representative of the *Yelp* dataset. Austin also encompasses more than 100 neighbourhoods, making it ideal for map-style visualizations.
-
-{% include b_per_neighbourhood_plotly.html %}
-
-The above map shows the most central neighbourhoods in Austin, and the amount of businesses each neighbourhood has with at least one *Yelp* review. Neighbourhoods are colour-coded, where purple contains the least amount of businesses, and yellow contains the most. **Hover** over each neighbourhood to see the exact amount of businesses it contains. Most neighbourhoods are in the same range, with the only clear outlier being downtown Austin with 2026 businesses.
 
 
 ## Nationality and speech
