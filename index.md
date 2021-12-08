@@ -166,18 +166,21 @@ In order to solidify our findings, we will revisualize our network from earlier.
 
 <img src="images/community_network.png" class="big-center">
 
-The above visualization is impactful. Based on the labels, we can see that we managed to accurately partition characters between the two series. All the nodes in the grey community are directly associated with *The Legend of Korra*, while the rest have a role in both series (albeit mostly the first).  The light blue community managed to capture the first 5 members of the original *Team Avatar* which the first series focuses on. In the red community, we also see members of the royal Fire Nation family.
+The above visualization is impactful. Based on the labels, we can see that we managed to accurately partition characters between the two series. All the nodes in the grey community are directly associated with *The Legend of Korra*, while the rest have a role in both series (albeit mostly the first).  The light blue community managed to capture the first 5 members of the original *Team Avatar* which the first series focuses on. In the red community, we also see members of the royal Fire Nation family. We also added some additional character labels, and with this, we see *Appa*, the flying bison in the light blue community! It is amusing that a non-human (which cannot even speak) has such a large role in this community.
 
-## Nationality and speech
+# Sentiment analysis
 
-<!--- show word clouds here --->
-some word clouds...
 
-# Final Words
+<img src="images/sentiment_per_character.png" class="center">
+
+{% include top10sentiment.html %}
+
+# Temporal sentiment analysis
+# Afterword
 
 what a ride its been....
 
-# More Details
+# More details
 
 ## Download
 To download the scraped data from the fandom wiki, one can use this [link](https://drive.google.com/drive/folders/1clkgTPeM7uLm30IFX5zSLVsI_2E0MgXT?usp=sharing).
