@@ -416,12 +416,52 @@ We also find the *Korra-Bolin-Mako* community, mainly associated with the second
 
 # Temporal sentiment analysis
 
+The last section gave a more general overview of sentiment - we did not consider the temporal aspect present within a series. Now, we will use sentiment analysis to examine how the mood of episodes changes throughout both series. This will allow to compare episodes within series, but also give us an idea of how the second series differs from the first.
 
+We have seen a few indications that *The Legend of Korra* could have a darker theme than *Avatar: The Last Airbender*. This is the central idea we wish to discover here.
+
+We'll start at a low level of detail by examining the average sentiment across the two series. After that we will deepen our focus and look at sentiment per season and finally sentiment per episode.
+
+## Sentiment per series
+
+
+<img src="images/sentiment_per_series.png" class="center">
+
+To our surprise, it appears that *The Legend of Korra* is actually more positive than *Avatar: The Last Airbender* according to the above plot. This is opposite from what we had gathered based on small pieces of information so far. This reinforces the idea that you should always confirm your hypothesis instead of assuming it to be true.
+
+With this level of detail it is hard to explain *why* this is the case. Next, we'll look at the sentiment per season.
+
+## Sentiment per book
+
+<img src="images/sentiment_per_season.png" class="center">
+
+According to above, it is clear the the sentiment of series 1 is lower than series 2. Series 1 ends at a low point at season 3, before jumping up at the start of *The Legend of Korra* in season 4. It is an interesting tactic to start at a high note at season 4, before dropping down quickly in season 5. The sentiment then builds up the last two seasons, ending the overall story on a high note.
+
+One might be surprised that the first series ends at a low point. The finale of *Avatar: The Last Airbender* marks the end of the *Hundred-year war*. Ending a war and bringing peace is of course a positive thing - but we never get to the fruits of their labor in the first series. It ends quite abruptly after the climax, leaving no time to rebuild the world which has been plagued by war for so long. Not before the start of *The Legend of Korra*, which is set 70 years after the end of *Avatar: The Last Airbender*. This also explains the high sentiment in season 4, which is the first book of *The Legend of Korra*.
+
+
+## Sentiment per episode
+
+Sentiment per episode is the highest level of temporal detail that we can get. This means that we longer have to average sentiment values. We can just use the values as is.
+
+<img src="images/sentiment_per_episode.png" class="center">
+
+It feels like this level of detail is too great. The above line plot look "squiggly" due to large oscillations in sentiment values. For reference, *The Legend of Korra* begins at episode number **62**.
+
+There seems to be a great deal of back and forth within both series. This could indicate mini-conflicts that appear, only to be resolved in the next few episodes. There are few sub-curves with slow growth. Most values change very quickly. One thing is for certain however: *The Legend of Korra* (and the two series as a whole) end on a large high note, opposite to the original series.
 
 
 # Afterword
 
-what a ride its been....
+And with that, we are done. What a ride its been! We will now reflect on our findings, what went well, what went less well etc.
+
+We do not find the word clouds particularly successful. They rarely gave distinct keywords that could accurately describe a nationality. Perhaps we could have tried focusing on adverbs and adjectives instead of all words to hone in on important terms. We also had some small issues with bogus words appearing on the word clouds.
+
+Community detection felt like a success. Upon further examination, all of the community members made a lot of sense, and each could clearly be seen when visualized. It was interesting to see how nationalities were overrepresented in communities.
+
+Sentiment analysis was interesting. The top and bottom characters were unexpected, but in the end made sense for most characters. It is a shame that our approach gets so easily skewed by characters with little dialogue. We ended up dropping all characters will less than 100 words spoken, but even that felt on the low side. Increasing it any further was not an option however, since that quickly eliminated almost all characters.
+
+Temporal sentiment analysis ended up proving our hypothesis that the second series is darker than the sequel series wrong. It was interesting to see how the dramatic structures of the series differed, with *Avatar: The Last Airbender* ending on a low note while the opposite was true for *The Legend of Korra*. The sentiment per episode did not work well - it was too difficult to notice trends in the graph. A line plot is certainly not the best tool for visualizing this property.
 
 # More details
 
@@ -440,11 +480,3 @@ The more technically inclined readers can take a look at our *explainer notebook
 
 You can also view and download it from [Github](https://github.com/philipwastakenwastaken/social-graphs-project-2021). Note that running
 the notebook yourself will take **several hours**, so only do so if you have patience.
-
-# References
-
-- Luca, Michael (2016). "Reviews, Reputation, and Revenue: The Case of Yelp.com". In: *Harvard Business School NOM Unit Working Paper No. 12-016*. Available at SSRN: https://ssrn.com/abstract=1928601 or http://dx.doi.org/10.2139/ssrn.1928601.
-- Anderson, M.L., and J. Magruder (2013). "Does Yelp Affect Restaurant Demand?" In: *ARE Update 16(5):1-4*. University of California Giannini Foundation of Agricultural Economics.
-- Loten, Angus (2014). "Yelp Regularly Gets Subpoenas About Users". In: *The Wall Street Journal*.
-- Yelp (2021). "Yelp Open Dataset". Retrieved from: https://www.yelp.com/dataset at 08/05/2021.
-- Lin, Carol and Ji, Matt (2014). "Austin Neighbourhoods". Retrieved from https://www.austintexasinsider.com/austinneighborhoods.html at 09/05/2021.
