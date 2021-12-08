@@ -80,7 +80,7 @@ The first series follows *Aang*, a young boy struggling with the burden of being
 
 The above is a small introduction to the series. We will provide some additional context throughout this article.
 
-The series has only grown in popularity since its inception, and we therefore consider this a prime time to take a *deep dive* into the *Avatar: The Last Airbender* universe. We will explore the connections between characters, and characterize their behaviour (both invidually and in groups) by analyzing their spoken word. Differences of mood within and across series will also be analyzed. All this is made possible by the use of the [Avatar fandom wiki](avatar.fandom.com/wiki/Avatar_Wiki), containing all information needed to make our analysis.
+The series has only grown in popularity since its inception, and we therefore consider this a prime time to take a *deep dive* into the *Avatar: The Last Airbender* universe. We will explore the connections between characters, and characterize their behaviour (both invidually and in groups) by analyzing their spoken word. Differences of mood within and across series will also be analyzed. All this is made possible by the use of the [Avatar fandom wiki](avatar.fandom.com/wiki/Avatar_Wiki), containing all information needed to make our analysis. Specifically, we will utilize character pages and episode transcripts.
 
 # The social network, visualized
 Within ATLA, characters have social relations, just like we do in real life. Some characters pave their way and become famous, while others live a humble life and stick to their own. In this section, we want to *visualize* the social network of ATLA. Each *node* of the network represents a character, and each *link* (the lines between nodes) represents a connection between two characters. For our analysis,
@@ -104,7 +104,7 @@ The ATLA universe contains characters of many shapes and sizes. Here, we'll expl
 
 <img src="images/nat_dist.png" class="center">
 
-Above, we see the distrubution of nationality within avatar. We see that the Earth Kingdom is by far the most represented nation, but the Fire Nation following behind in second. It makes sense that the Water Tribe and Air Nation are small, since they are much closer to tribes found in the real world. We cannot actually say that the Earth Kingdom has a larger population than the Fire Nation from the above. What we can say however, is that the main characters of both series interact with characters from the Earth Kingdom to a greater degree. The United Republic, first formed in the second series, receives less attention than either of the major nations.
+Above, we see the distrubution of nationality within ATLA. We see that the Earth Kingdom is by far the most represented nation, with the Fire Nation following behind. It makes sense that the Water Tribe and Air Nation are small, since they are much closer to tribes found in the real world. We cannot actually say that the Earth Kingdom has a larger population than the Fire Nation from the above. What we can say however, is that the main characters of both series interact with characters from the Earth Kingdom to a greater degree. The United Republic, first formed in the second series, receives less attention than either of the major nations.
 
 One of the selling points of ATLA is that characters are able to perform *bending*. Bending is the act of manipulating one of the basic four elements: fire, water, earth and air. Each character is naturally attuned toward a specific element. The key aspect of the *Avatar* is that they are able to manipulate all four elements.
 
@@ -173,12 +173,12 @@ The above visualization is impactful. Based on the labels, we can see that we ma
 # Sentiment analysis
 In this section, we will perform *sentiment analysis* using the extracted character dialogue. Sentiment analysis is a way to evaluate text as either *positive* or *negative*. For example, the following sentence would be considered positive: "*You are so sweet!*". Contrarily, "*You are a big idiot*" would be considered very negative. We will use this tool to rank characters as positive or negative.
 
-Many Fire Nation characters (such as *Ozai* and *Zuko*) are known for being negative. The Fire Nation in general has a bad reputation. It is also interesting to know the distribution of character sentiment. Are charactrs generally negative or positive? We hope find the truth during the following sections.
+Many Fire Nation characters (such as *Ozai* and *Zuko*) are known for being negative. The Fire Nation in general has a bad reputation. It is also interesting to know the distribution of character sentiment. Are characters generally negative or positive? We hope find the truth during the following sections.
 
 <img src="images/sentiment_per_character.png" class="center">
 
 The above plot seems to portray something akin to a normal distribution. Although there seems to be a few outliers to the right.
-We see most charactrs in the *neutral* range around $0$, with less characters appearing at either end. At the right tail, there is an extraordinary amount of positive characters. It is possible that these are our main characters, who are figuratively shining beams of light. The number of negative characters is not especially high.
+We see most charactrs in the *neutral* range around **0**, with less characters appearing at either end. At the right tail, there is an extraordinary amount of positive characters. It is possible that these are our main characters, who are figuratively shining beams of light. The number of negative characters is not especially high.
 
 The previous plot gave us an overview, but hopefully we can get to the specifics here. At first we will consider the top 10 'happiest' characters. There is a small note here. We only include characters with more than **100** words of dialogue. Characters with less makes the ranking skewed, as even few spoken words can have dramatic consequences.
 
@@ -252,7 +252,7 @@ The previous plot gave us an overview, but hopefully we can get to the specifics
     </tr>
     <tr>
       <th>Vaatu</th>
-      <td>NaN</td>
+      <td>N/A</td>
       <td>Male</td>
       <td>160</td>
       <td>0.127987</td>
