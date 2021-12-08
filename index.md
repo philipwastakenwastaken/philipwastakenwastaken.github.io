@@ -78,6 +78,8 @@ top: 0.0%;
 *Avatar: The Last Airbender* (ATLA) is a critically acclaimed animation series, by authors *Michael DiMartino* and *Bryan Konietzko*, that first aired in 2005. It split itself over two series, the titular *Avatar: The Last Airbender* and ending with *The Legend of Korra* in 2012.
 The first series follows *Aang*, a young boy struggling with the burden of being denoted the *Avatar*, while the notorious *Hundred-year War* rages on by the aggressors, the *Fire Nation*. The final series, *The Legend of Korra*, is set 70 years after the finale of the first series. Nothing but a child, *Korra* is likewise denoted the *Avatar*, and troubles follow.
 
+The above is a small introduction to the series. We will provide some additional context throughout this article.
+
 The series has only grown in popularity since its inception, and we therefore consider this a prime time to take a *deep dive* into the *Avatar: The Last Airbender* universe. We will explore the connections between characters, and characterize their behaviour (both invidually and in groups) by analyzing their spoken word. Differences of mood within and across series will also be analyzed. All this is made possible by the use of the [Avatar fandom wiki](avatar.fandom.com/wiki/Avatar_Wiki), containing all information needed to make our analysis.
 
 # The social network, visualized
@@ -371,12 +373,8 @@ This subsection is a throwback to the previously found communities, where we fou
 <table border="0" class="big-center">
   <thead>
     <tr style="text-align: center;">
-      <th></th>
-      <th>Sentiment</th>
-    </tr>
-    <tr>
       <th>Community name</th>
-      <th></th>
+      <th>Sentiment</th>
     </tr>
   </thead>
   <tbody>
