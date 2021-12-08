@@ -169,9 +169,17 @@ In order to solidify our findings, we will revisualize our network from earlier.
 The above visualization is impactful. Based on the labels, we can see that we managed to accurately partition characters between the two series. All the nodes in the grey community are directly associated with *The Legend of Korra*, while the rest have a role in both series (albeit mostly the first).  The light blue community managed to capture the first 5 members of the original *Team Avatar* which the first series focuses on. In the red community, we also see members of the royal Fire Nation family. We also added some additional character labels, and with this, we see *Appa*, the flying bison in the light blue community! It is amusing that a non-human (which cannot even speak) has such a large role in this community.
 
 # Sentiment analysis
+In this section, we will perform *sentiment analysis* using the extracted character dialogue. Sentiment analysis is a way to evaluate text as either *positive* or *negative*. For example, the following sentence would be considered positive: "*You are so sweet!*". Contrarily, "*You are a big idiot*" would be considered very negative. We will use this tool to rank characters as positive or negative.
 
+Many Fire Nation characters (such as *Ozai* and *Zuko*) are known for being negative. The Fire Nation in general has a bad reputation. It is also interesting to know the distribution of character sentiment. Are charactrs generally negative or positive? We hope find the truth during the following sections.
 
 <img src="images/sentiment_per_character.png" class="center">
+
+The above plot seems to portray something akin to a normal distribution. Although there seems to be a few outliers to the right.
+We see most charactrs in the *neutral* range around $0$, with less characters appearing at either end. At the right tail, there is an extraordinary amount of positive characters. It is possible that these are our main characters, who are figuratively shining beams of light. The number of negative characters is not especially high.
+
+The previous plot gave us an overview, but hopefully we can get to the specifics here. At first we will consider the top 10 'happiest' characters. There is a small note here. We only include characters with more than **100** words of dialogue. Characters with less makes the ranking skewed, as even few spoken words can have dramatic consequences.
+
 
 <table border="0" class="big-center">
   <thead>
@@ -257,6 +265,14 @@ The above visualization is impactful. Based on the labels, we can see that we ma
   </tbody>
 </table>
 
+The above table shows the 10 most positive characters.
+The most positive character, by a far margin, is *Ty Lee*. She is a young girl from the Fire Nation. The fandom wiki describes her as "*[...] bubbly and outgoing [...]*", which matches her sentiment value. Generally, her page describes her as affectionate and kind.
+
+There are also a few surprises here. *Vaatu* is the "*the spirit of darkness and chaos*" according the wiki. He is the main antagonist during *The Legend of Korra*, and can not exactly be described as a positive character. He even has dialogue where he speaks of annihilating other characters. However, we must he remember that he has little dialogue, only at 160 words. In some of this dialogue, he tricks another character, by appearing benevolent and kind, into freeing him from his prison. This could help explain why he is so high up.
+
+*Sozin* is another case of confusion. He singlehandedly eradicated a large fraction of Air Nomads (not yet part of the Air Nation) in an attempt to gain power. He is also the person responsible for initiating the *Hundred-year war*, the main plot point of the first series. In short, he wishes the Fire Nation to reign supreme. We had to carefully examine his dialogue to account for this. It appears that he is only directly involved in very few scenes, where he is depicted in his (more positive) younger years. It is only other characters who speak of his atrocities.
+
+We also find *none* of the main cast present in the top 10. This denies our hypothesis previously presented that the outliers could be main characters.
 
 <table border="0" class="big-center">
   <thead>
@@ -341,6 +357,11 @@ The above visualization is impactful. Based on the labels, we can see that we ma
     </tr>
   </tbody>
 </table>
+
+*Raava* is the direct contrast to *Vaatu*. She is the spirit of light and peace, and one might find it equally surprising to find her present on the bottom 10. However, simply being the proctector of peace does not make her a positive character per default. The wiki describes her as abrasive and intolerant of people with differing beliefs. Therefore, we actually find this assessment to be accurate.
+
+The rest of the list is not surprising. These are all characters that either have negative personalities, or have suffered deep personal losses. Nonetheless, most of these characters are from the first series, denoting a difference between the two.
+
 
 # Temporal sentiment analysis
 # Afterword
